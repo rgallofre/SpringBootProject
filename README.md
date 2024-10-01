@@ -19,35 +19,32 @@ SPRINGBOOTPROJECT is a Spring Boot application developed in Eclipse. The primary
 
 Below are the basic RESTful API endpoints provided by the application:
 
-### **EMPLOYEES**
-### 1. **GET Request**
-```bash
+### Instructions
+### 1. GET Request
+
 $ curl -v localhost:8080/employees | json_pp
 $ curl -v localhost:8080/employees/{id}
 
 ### 2. **POST Request**
-curl -X POST localhost:8080/employees -H 'Content-type:application/json' -d '{"name": "{name}", "role": "{role}'}'
 
-### 2. **PUT Request**
-```bash
+$curl -X POST localhost:8080/employees -H 'Content-type:application/json' -d '{"name": "{name}", "role": "{role}'}'
+
+### 3. **PUT Request**
 $ curl -v -X PUT localhost:8080/employees/{id} -H 'Content-Type:application/json' -d '{"name": "{name}", "role": "{role}}' | json_pp
 
-### 3. **DELATE Request**
-```bash
+### 4. **DELATE Request**
 $ curl -v -X DELETE localhost:8080/employees/{id}
 
 ### **ORDERS**
 ### 1. **GET Request**
-```bash
 $ curl -v http://localhost:8080/orders | json_pp
 $ curl -v http://localhost:8080/orders/{id} | json_pp
 
 ### 2. **PUT Request**
-```bash
 $ curl -v -X PUT localhost:8080/orders/4/complete | json_p
 
 ### 3. **DELATE Request**
-```bash
+
 $ curl -v -X DELETE http://localhost:8080/orders/{id}/cancel | json_pp
 
 
