@@ -1,4 +1,4 @@
-# SPRINGBOOTPROJECT
+# SpringBootProject
 
 ## Description
 SPRINGBOOTPROJECT is a Spring Boot application developed in Eclipse. The primary focus of this project is to build a RESTful web service. This service exposes REST APIs to handle requests and responses for various endpoints. It provides a clean and scalable foundation for creating and deploying REST services using the Spring Boot framework.
